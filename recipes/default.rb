@@ -25,3 +25,13 @@ end
 # --------------------------------------------------------------------------
 
 execute "n #{node['n-and-nodejs']['nodejs']['version']}"
+
+# Ensure that NODE_PATH is set for everyone.
+template 'node-path.sh' do
+  path '/etc/profile.d/node-path.sh'
+  source 'node-path.sh.erb'
+  owner 'root'
+  group 'root'
+  mode '0755'
+end
+

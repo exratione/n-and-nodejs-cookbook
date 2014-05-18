@@ -1,7 +1,7 @@
 name              'n-and-nodejs'
 license           'MIT'
 description       'Install Node.js version manager n and Node.js.'
-version           '0.0.1'
+version           '0.0.2'
 recipe            'n-and-nodejs', 'Install Node.js version manager n and Node.js.'
 
 # We will be building n from source.
@@ -9,7 +9,7 @@ depends 'build-essential'
 # n uses curl to download Node.js binaries.
 depends 'curl'
 
-%w{ fedora redhat centos ubuntu debian amazon suse scientific oracle smartos}.each do |os|
+%w{ fedora redhat centos ubuntu debian amazon suse scientific oracle smartos }.each do |os|
   supports os
 end
 
