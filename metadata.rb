@@ -1,7 +1,7 @@
 name              'n-and-nodejs'
 license           'MIT'
 description       'Install Node.js version manager n and Node.js.'
-version           '0.0.2'
+version           '0.0.3'
 recipe            'n-and-nodejs', 'Install Node.js version manager n and Node.js.'
 
 # We will be building n from source.
@@ -16,7 +16,7 @@ end
 attribute 'n-and-nodejs/n/version',
   :display_name => 'n version.',
   :description => 'Which version of n to install.',
-  :default => '1.2.1'
+  :default => '1.2.13'
 
 attribute 'n-and-nodejs/nodejs/version',
   :display_name => 'Node.js version',

@@ -8,7 +8,7 @@
 
 # Obtain the source from GitHub.
 remote_file "/tmp/#{node['n-and-nodejs']['n']['version']}.tar.gz" do
-  source "https://github.com/visionmedia/n/archive/#{node['n-and-nodejs']['n']['version']}.tar.gz"
+  source "https://github.com/tj/n/archive/v#{node['n-and-nodejs']['n']['version']}.tar.gz"
   action :create_if_missing
 end
 

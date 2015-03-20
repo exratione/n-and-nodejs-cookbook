@@ -25,11 +25,11 @@ run_list [
 default_attributes(
   "n-and-nodejs" => {
     "n" => {
-      "version" => "1.2.1"
+      "version" => "1.2.13"
     },
     "nodejs" => {
       # Install a specific version.
-      # "version" => "0.10.26",
+      # "version" => "0.12.0",
       #
       # Install the latest stable version.
       "version" => "stable"
@@ -38,5 +38,5 @@ default_attributes(
 )
 ```
 
-[0]: https://github.com/visionmedia/n
+[0]: https://github.com/tj/n
 [1]: http://nodejs.org
